@@ -1,0 +1,24 @@
+<!DOCTYPE html> // Anger att detta är en HTML5-fil.
+<html lang="sv"> // Startar HTML-dokumentet och anger att språket är svenska.
+<head> // Innehåller metadata som titel och CSS-stilar.
+    <meta charset="UTF-8"> // Gör att svenska tecken som å, ä och ö visas korrekt.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> //Gör att sidan ser bra ut på mobil och dator.
+    <title>Multiplikationsspelet</title> Sätter sidans titel (visas i webbläsarens flik).
+    
+    // Här definieras CSS-stilar för att göra sidan snyggare.
+    <style> 
+        body { font-family: Arial, sans-serif; text-align: center; }
+        input, button { font-size: 1.2em; padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+
+// Här börjar sidans innehåll.
+<body>
+    <h1>🎲 Multiplikationsspelet</h1> // Huvudrubriken på sidan.
+    <p id="question">Klicka på Start för att få en fråga!</p> // Ett stycke där en multiplikationsfråga kommer att visas.
+    <input type="number" id="answer" placeholder="Skriv ditt svar"> //Ett inmatningsfält där spelaren kan skriva sitt svar.
+    <button onclick="checkAnswer()">Svara</button> //En knapp som anropar checkAnswer() när den klickas.
+    <p id="result"></p> //Här visas om svaret var rätt eller fel.
+    <script src="multiplication_game.js"></script> //Länkar till TypeScript-filen (som konverteras till multiplication_game.js).
+</body>
+</html>
